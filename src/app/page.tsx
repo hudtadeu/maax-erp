@@ -12,7 +12,7 @@ export default function Home() {
           <Link href="/dashboard">
             <Button>
               <Layout className="size-4" />
-              Go to dashboard
+              Vá para o Dashboard
             </Button>
           </Link>
         </div>
