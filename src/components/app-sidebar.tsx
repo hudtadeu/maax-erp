@@ -9,7 +9,6 @@ import {
   IconFileText,
   IconHelp,
   IconInnerShadowLeftFilled,
-  IconSearch,
   IconSettings,
   IconCertificate,
   IconFileSearch,
