@@ -3,7 +3,6 @@
 import * as React from "react"
 import {
   IconCamera,
-  IconDashboard,
   IconFileAi,
   IconFileDescription,
   IconFileInvoice,
@@ -32,12 +31,13 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { SearchForm } from "./search-form";
 
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "maax",
+    email: "maax@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
@@ -128,11 +128,6 @@ const data = {
       url: "#",
       icon: IconHelp,
     },
-    {
-      title: "Buscar",
-      url: "#",
-      icon: IconSearch,
-    },
   ],
   documents: [
     {
@@ -180,6 +175,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
+        <SearchForm className="mt-2"/>
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
