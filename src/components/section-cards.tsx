@@ -15,7 +15,7 @@ export function SectionCards() {
     <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Receita Total</CardDescription>
+          <CardDescription>Total de Compras</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             R$ 1.250,00
           </CardTitle>
@@ -28,16 +28,16 @@ export function SectionCards() {
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Tendência de alta este mês <IconTrendingUp className="size-4" />
+            Compras em alta neste mês <IconTrendingUp className="size-4" />
           </div>
           <div className="text-muted-foreground">
-            Visitantes nos últimos 6 meses
+            Volume de compras nos últimos 6 meses
           </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Novos Clientes</CardDescription>
+          <CardDescription>Número de Pedidos</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             1.234
           </CardTitle>
@@ -53,13 +53,13 @@ export function SectionCards() {
             Queda de 20% neste período <IconTrendingDown className="size-4" />
           </div>
           <div className="text-muted-foreground">
-            Aquisição precisa de atenção
+            Volume de pedidos precisa de atenção
           </div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
         <CardHeader>
-          <CardDescription>Contas Ativas</CardDescription>
+          <CardDescription>Quantidade de Vendas</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             45.678
           </CardTitle>
@@ -72,9 +72,9 @@ export function SectionCards() {
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Forte retenção de usuários <IconTrendingUp className="size-4" />
+            Forte desempenho em vendas <IconTrendingUp className="size-4" />
           </div>
-          <div className="text-muted-foreground">Engajamento acima da meta</div>
+          <div className="text-muted-foreground">Vendas acima da meta</div>
         </CardFooter>
       </Card>
       <Card className="@container/card">
@@ -94,7 +94,9 @@ export function SectionCards() {
           <div className="line-clamp-1 flex gap-2 font-medium">
             Aumento de desempenho constante <IconTrendingUp className="size-4" />
           </div>
-          <div className="text-muted-foreground">Dentro da projeção de crescimento</div>
+          <div className="text-muted-foreground">
+            Dentro da projeção de crescimento
+          </div>
         </CardFooter>
       </Card>
     </div>
