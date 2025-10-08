@@ -14,9 +14,10 @@ import {
   IconSettings,
   IconCertificate,
   IconFileSearch,
-  IconShoppingCart, // add for Compras
-  IconCash,         // add for Vendas
+  IconShoppingCart,
+  IconCash,      
 } from "@tabler/icons-react"
+import Link from "next/link";
 
 import { NavMain } from "@/components/nav-main"
 import { NavDocuments } from "./nav-documents"
@@ -40,11 +41,6 @@ const data = {
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
-    {
-      title: "Dashboard",
-      url: "#",
-      icon: IconDashboard,
-    },
     {
       title: "Compras",
       url: "#",
@@ -177,10 +173,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
+              <Link href="/dashboard">
                 <IconInnerShadowLeftFilled className="!size-5" />
                 <span className="text-base font-semibold">Maax Inc.</span>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
