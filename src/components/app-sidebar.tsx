@@ -3,20 +3,19 @@
 import * as React from "react"
 import {
   IconCamera,
-  IconChartBar,
   IconDashboard,
-  IconDatabase,
   IconFileAi,
   IconFileDescription,
-  IconFileWord,
-  IconFolder,
+  IconFileInvoice,
+  IconFileText,
   IconHelp,
   IconInnerShadowLeftFilled,
-  IconListDetails,
-  IconReport,
   IconSearch,
   IconSettings,
-  IconUsers,
+  IconCertificate,
+  IconFileSearch,
+  IconShoppingCart, // add for Compras
+  IconCash,         // add for Vendas
 } from "@tabler/icons-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -47,24 +46,31 @@ const data = {
       icon: IconDashboard,
     },
     {
-      title: "Ciclo de Vida",
+      title: "Compras",
       url: "#",
-      icon: IconListDetails,
+      icon: IconShoppingCart,
+      items: [
+        { title: "Solicitações de Compras", url: "#" },
+        { title: "Cotações", url: "#" },
+        { title: "Ordens de Compra", url: "#" },
+        { title: "Pedidos de Compra", url: "#" },
+        { title: "Recebimentos", url: "#" },
+        { title: "Contratos de Parceria", url: "#" },
+        { title: "Aprovações Logísticas", url: "#" },
+      ],
     },
     {
-      title: "Análises",
+      title: "Vendas",
       url: "#",
-      icon: IconChartBar,
-    },
-    {
-      title: "Projetos",
-      url: "#",
-      icon: IconFolder,
-    },
-    {
-      title: "Equipe",
-      url: "#",
-      icon: IconUsers,
+      icon: IconCash,
+       items: [
+        { title: "Pedidos de Venda", url: "#" },
+        { title: "Faturamento", url: "#" },
+        { title: "Nota Fiscal de Saída", url: "#" },
+        { title: "Gestão de Entregas", url: "#" },
+        { title: "Fidelização de Clientes", url: "#" },
+        { title: "Vendas Assistidas", url: "#" },
+      ],
     },
   ],
   navClouds: [
@@ -134,19 +140,29 @@ const data = {
   ],
   documents: [
     {
-      name: "Biblioteca de Dados",
+      name: "Notas Fiscais (Entrada/Saída)",
       url: "#",
-      icon: IconDatabase,
+      icon: IconFileInvoice,
     },
     {
-      name: "Relatórios",
+      name: "Contratos de Fornecimento",
       url: "#",
-      icon: IconReport,
+      icon: IconFileDescription,
     },
     {
-      name: "Assistente Word",
+      name: "Propostas Comerciais",
       url: "#",
-      icon: IconFileWord,
+      icon: IconFileText,
+    },
+    {
+      name: "Documentos de Aprovação",
+      url: "#",
+      icon: IconCertificate,
+    },
+    {
+      name: "Arquivos de Auditoria",
+      url: "#",
+      icon: IconFileSearch,
     },
   ],
 }
