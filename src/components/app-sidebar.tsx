@@ -45,7 +45,7 @@ const data = {
       url: "#",
       icon: IconShoppingCart,
       items: [
-        { title: "Solicitações de Compras", url: "#" },
+        { title: "Solicitações de Compras", url: "/solicitacao-de-compras" }, 
         { title: "Cotações", url: "#" },
         { title: "Ordens de Compra", url: "#" },
         { title: "Pedidos de Compra", url: "#" },
